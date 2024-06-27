@@ -1,0 +1,77 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
+
+/* .outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+body {
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-gray);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    background-color: var(--white);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+    width: 320px;
+    height: 497px;
+    border-radius: 2em;
+    gap: 16px;
+}
+
+
+
+img {
+    height: 288px;
+    width: 288px;
+    border-radius: 1em;
+    padding-top: 0;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-heading {
+    width: 288px;
+    font-weight: 700;
+    font-size: 24px;
+    
+}
+
+.card-text {
+    width: 288px;
+    color: var(--grayish-blue);
+    font-size: 16px;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution.a {
+    color: hsl(228, 45%, 44%);
+}
